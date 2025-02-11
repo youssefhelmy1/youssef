@@ -4,24 +4,7 @@ title: Contact
 
 {{ site.data.content.contact.text | markdownify }}
 
-<!-- Contact Information -->
-<div class="contact-info">
-    <p>📞 <a href="tel:+1234567890">+1 234 567 890</a></p>
-    <p>📧 <a href="mailto:your@email.com">your@email.com</a></p>
-
-    <div class="social-links">
-        <a href="https://facebook.com/yourprofile" target="_blank">
-            <img src="{{ site.baseurl }}/assets/icons/facebook.svg" alt="Facebook">
-        </a>
-        <a href="https://instagram.com/yourprofile" target="_blank">
-            <img src="{{ site.baseurl }}/assets/icons/instagram.svg" alt="Instagram">
-        </a>
-        <a href="https://twitter.com/yourprofile" target="_blank">
-            <img src="{{ site.baseurl }}/assets/icons/twitter.svg" alt="Twitter">
-        </a>
-    </div>
-</div>
-
+<!-- Contact Form -->
 <form method="post" action="{{ site.baseurl }}/contact-success/">
 	<input type="hidden" name="_to" value="{{ site.data.email }}" />
 	<input type="text" name="_gotcha" style="display: none;">
@@ -59,3 +42,16 @@ title: Contact
 
 	<input type="submit" value="Send Message" />
 </form>
+
+<!-- Social Media Icons at the Bottom -->
+<div class="social-links">
+    <a href="https://www.tiktok.com/@y7elmy" target="_blank">
+        <img src="{{ site.baseurl }}/uploads/tik.png" alt="TikTok">
+    </a>
+    <a href="https://www.instagram.com/yousefhelmymusic/" target="_blank">
+        <img src="{{ site.baseurl }}/uploads/insta.png" alt="Instagram">
+    </a>
+    <a href="https://www.youtube.com/@yousefhelmymusic" target="_blank">
+        <img src="{{ site.baseurl }}/uploads/you.png" alt="YouTube">
+    </a>
+</div>
