@@ -1,7 +1,26 @@
 ---
 title: Contact
 ---
+
 {{ site.data.content.contact.text | markdownify }}
+
+<!-- Contact Information -->
+<div class="contact-info">
+    <p>📞 <a href="tel:+1234567890">+1 234 567 890</a></p>
+    <p>📧 <a href="mailto:your@email.com">your@email.com</a></p>
+
+    <div class="social-links">
+        <a href="https://facebook.com/yourprofile" target="_blank">
+            <img src="{{ site.baseurl }}/assets/icons/facebook.svg" alt="Facebook">
+        </a>
+        <a href="https://instagram.com/yourprofile" target="_blank">
+            <img src="{{ site.baseurl }}/assets/icons/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://twitter.com/yourprofile" target="_blank">
+            <img src="{{ site.baseurl }}/assets/icons/twitter.svg" alt="Twitter">
+        </a>
+    </div>
+</div>
 
 <form method="post" action="{{ site.baseurl }}/contact-success/">
 	<input type="hidden" name="_to" value="{{ site.data.email }}" />
@@ -13,7 +32,7 @@ title: Contact
 			<input type="text" name="first-name" id="first-name" />
 		</div>
 		<div class="split">
-			<label for="surname">Surname</label>
+			<label for="surname">Last Name</label>
 			<input type="text" name="surname" id="surname" />
 		</div>
 	</div>
