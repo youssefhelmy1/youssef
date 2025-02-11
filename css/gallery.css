@@ -38,3 +38,29 @@
 .gallery-item:hover .caption {
     opacity: 1;
 }
+/* Center the header and subheading */
+h1, h2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Make sure the text is centered and aligned well */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
