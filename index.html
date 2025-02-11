@@ -2,32 +2,33 @@
 title: Home
 ---
 
-<ul class="gallery">
-    {% for photo in site.data.gallery %}
-        <li style="background-image: url('{{ site.baseurl }}{{ photo.image | resize: '800x800>' }}')">
-            <a title="{{ photo.caption }}"
-                href="{{ site.baseurl }}{{ photo.image }}"
-                data-id="#{{ photo.image | slugify }}"
-                data-caption="{{ photo.caption }}">
-            </a>
-        </li>
-    {% endfor %}
+<h1>Hi, Welcome to My Portfolio</h1>
 
-    <!-- Ensure images on the last row are still small. -->
-    <li class="spacer"></li>
-    <li class="spacer"></li>
-    <li class="spacer"></li>
-    <li class="spacer"></li>
-    <li class="spacer"></li>
-    <li class="spacer"></li>
-    <li class="spacer"></li>
-    <li class="spacer"></li>
-    <li class="spacer"></li>
-    <li class="spacer"></li>
-    <li class="spacer"></li>
-    <li class="spacer"></li>
+<!-- Gallery Section -->
+<ul class="gallery">
+    <li>
+        <a href="{{ site.baseurl }}/about">
+            <img src="{{ site.baseurl }}/images/about.jpg" alt="About Me">
+            <span class="caption">About Me</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="{{ site.baseurl }}/performances/videos">
+            <img src="{{ site.baseurl }}/images/performances.jpg" alt="Performances">
+            <span class="caption">My Performances</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="{{ site.baseurl }}/contact">
+            <img src="{{ site.baseurl }}/images/contact.jpg" alt="Contact">
+            <span class="caption">Contact Me</span>
+        </a>
+    </li>
 </ul>
 
+<!-- Overlay for enlarged images (if needed) -->
 <div class="overlay">
     <a href="#" class="close">&#10005;</a>
     <a class="prev">&lsaquo;</a>
