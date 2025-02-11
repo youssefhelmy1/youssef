@@ -1,0 +1,25 @@
+.social-links {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px; /* Space between icons */
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8); /* Light transparent background */
+    border-radius: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
