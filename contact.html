@@ -5,6 +5,8 @@ title: Contact
 {{ site.data.content.contact.text | markdownify }}
 
 <!-- Contact Form -->
+<link rel="stylesheet" href="{{ site.baseurl }}/css/icons.css">
+
 <form method="post" action="{{ site.baseurl }}/contact-success/">
 	<input type="hidden" name="_to" value="{{ site.data.email }}" />
 	<input type="text" name="_gotcha" style="display: none;">

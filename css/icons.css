@@ -1,12 +1,12 @@
 .social-links {
     position: fixed;
-    bottom: 20px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 15px; /* Space between icons */
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.8); /* Light transparent background */
+    gap: 10px; /* Space between icons */
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.7); /* Slightly transparent background */
     border-radius: 10px;
 }
 
@@ -15,11 +15,11 @@
 }
 
 .social-links img {
-    width: 40px;
-    height: 40px;
+    width: 24px; /* Smaller size */
+    height: 24px;
     transition: 0.3s;
 }
 
 .social-links img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
