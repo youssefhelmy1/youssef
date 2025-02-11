@@ -89,6 +89,7 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  bundler (~> 2.3.26)
   jekyll (~> 4.2)
   jekyll-resize!
   jekyll-seo-tag
@@ -97,4 +98,4 @@ DEPENDENCIES
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.6.3
+   2.3.27

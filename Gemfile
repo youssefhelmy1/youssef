@@ -3,6 +3,7 @@ gem "tzinfo"
 
 gem "jekyll", "~> 4.2"
 gem "webrick", "~> 1.7"
+gem "bundler", "~> 2.3.26"
 
 group :jekyll_plugins do
   gem "jekyll-sitemap"
