@@ -3,102 +3,130 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #121212;
     color: #fff;
-    text-align: center;
-    padding: 40px;
     margin: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    box-sizing: border-box; /* Ensure all elements use the same box model */
+    padding: 0;
 }
 
-/* Headings */
-h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-    font-weight: 600;
+/* Navigation Bar */
+nav {
+    background-color: #222;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Paragraph Text */
-p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #bbb;
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-/* Video Gallery Styling */
-.video-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible columns for all devices */
-    gap: 20px;
-    max-width: 100%; /* Ensure it doesn’t exceed the viewport */
-    padding: 10px; /* Add padding to prevent elements from touching the screen edge */
+nav a:hover {
+    background-color: #444;
+}
+
+nav a.active {
+    background-color: #ff5c5c;
+    color: white;
+}
+
+/* Container for About Content */
+.container {
+    max-width: 900px;
     margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
 }
 
-/* Individual Video Container Styling */
-.video-container {
-    position: relative;
-    overflow: hidden;
+/* Text Content Styling */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #bbb;
+    padding: 20px;
+    background-color: #222;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2); /* Soft shadow effect */
-    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.video-container:hover {
-    transform: scale(1.05); /* Enlarge slightly on hover */
-}
-
-/* Video iframe Styling */
-iframe {
-    width: 100%; /* Full width of parent container */
-    height: auto; /* Maintain aspect ratio */
+/* Image Styling */
+.profile-photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    margin: 0 auto;
 }
 
 /* Back Button Styling */
 .back-button {
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 12px 25px;
     background: #ff5c5c;
     color: white;
     text-decoration: none;
     font-weight: 500;
     border-radius: 6px;
-    transition: 0.3s;
+    transition: background-color 0.3s;
 }
 
 .back-button:hover {
     background: #ff2c2c;
 }
 
-/* Media Queries for Responsive Design */
-
-/* For tablets (600px - 900px) */
-@media (max-width: 900px) {
+/* Responsive Design */
+@media (max-width: 768px) {
     h1 {
-        font-size: 2rem; /* Smaller header font */
+        font-size: 2rem;
     }
 
-    iframe {
-        height: 180px; /* Reduced height for tablet screens */
+    p {
+        font-size: 0.9rem;
     }
 
-    .video-gallery {
-        gap: 15px; /* Smaller gaps on tablets */
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .profile-photo {
+        max-width: 300px;
     }
 }
 
-/* For phones (up to 600px) */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     h1 {
-        font-size: 1.5rem; /* Even smaller header font */
+        font-size: 1.8rem;
     }
 
-    iframe {
-        height: 150px; /* Smaller video height */
+    p {
+        font-size: 0.85rem;
+    }
+
+    .profile-photo {
+        max-width: 250px;
     }
 
     .back-button {
-        padding: 10px 20px; /* Slightly smaller button for phones */
         font-size: 0.9rem;
+        padding: 10px 20px;
     }
 }
