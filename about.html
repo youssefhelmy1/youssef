@@ -1,16 +1,82 @@
-about 
----
-title: About
----
-
-<div class="split-content">
-	<div class="side-content">
-		<div>
-			{{ site.data.content.about.text | markdownify }}
-		</div>
-	</div>
-
-	<div class="side-photo">
-		<img src="{{ site.baseurl }}/images/about.jpg" alt="Profile" height="400" width="400" />
-	</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 40px;
+        }
+        .text-content {
+            flex: 1;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #bbb;
+        }
+        .profile-photo {
+            width: 350px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #ff5c5c;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+        .back-button:hover {
+            background: #ff2c2c;
+        }
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-photo {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-content">
+            <h1>About Me</h1>
+            <p>Hi, I'm Youssef Helmy, a professional guitarist and passionate performer. I have performed in various concerts and events, showcasing my love for music.</p>
+            <a href="../index.html" class="back-button">Back to Home</a>
+        </div>
+        <img src="../images/about.jpg" alt="Youssef Helmy" class="profile-photo">
+    </div>
+</body>
+</html>
