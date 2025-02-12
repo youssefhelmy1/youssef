@@ -1,0 +1,29 @@
+/* For tablets (600px - 900px) */
+@media (max-width: 900px) {
+    h1 {
+        font-size: 2rem;
+    }
+    iframe {
+        height: 180px;
+    }
+    .video-gallery {
+        gap: 10px;
+    }
+}
+
+/* For phones (up to 600px) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    iframe {
+        height: 150px;
+    }
+    .video-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+iframe, video {
+    max-width: 100%; /* Ensure it doesn’t exceed the parent container */
+    height: auto; /* Maintain aspect ratio */
+}
