@@ -56,8 +56,12 @@
     <div class="container">
         <h1>About Me</h1>
         <img src="../images/about.jpg" alt="Youssef Helmy" class="profile-photo">
-        <p>Hi, I'm Youssef Helmy, a professional guitarist and passionate performer. I have performed in various concerts and events, showcasing my love for music.</p>
         <a href="../index.html" class="back-button">Back to Home</a>
     </div>
+	<div class="side-content">
+		<div>
+			{{ site.data.content.about.text | markdownify }}
+		</div>
+	</div>
 </body>
 </html>
