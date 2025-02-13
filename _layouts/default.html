@@ -32,7 +32,7 @@
 
 <body {% if page.text_width %}class="text-width" {% endif %}>
 	<div class="wrap">
-		<header>
+		 <header class="site-header">
 			<h1><a href="/"><span class="highlight">Youssef Helmy</span></a></h1>
 			{% include navigation.html %}
 		</header>
@@ -60,5 +60,17 @@
 .highlight {
     font-family: 'Pacifico', cursive;
     color: red;
+    font-weight: bold;
+}
+
+/* Center the title at the top */
+.site-header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.site-header h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
 }
 </style>
