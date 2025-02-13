@@ -74,7 +74,11 @@
 
     $gallery.find('a').click(function(e) {
         var $this = $(this);
-        changeHash($this.attr('data-id'));
+        if ($this.hasClass('gallery-item')) {
+            window.location.href = $this.attr('href');
+        } else {
+            changeHash($this.attr('data-id'));
+        }
         return false;
     });
 
