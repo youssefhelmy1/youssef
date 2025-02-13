@@ -60,11 +60,14 @@
             background: #ff2c2c;
         }
         video {
-    width: 100%;
-    height: 200px;
-    border-radius: 10px;
-    object-fit: cover;
-}
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .vertical-video video {
+            height: 400px; /* Adjust the height for vertical videos */
+        }
     </style>
 </head>
 <body>
@@ -72,19 +75,19 @@
     <p>Watch some of my best performances below:</p>
 
     <div class="video-gallery">
-        <div class="video-container">
+        <div class="video-container vertical-video">
             <video controls>
                 <source src="../uploads/Another Love .mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-        <div class="video-container">
+        <div class="video-container vertical-video">
             <video controls>
                 <source src="../uploads/Stay2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-        <div class="video-container">
+        <div class="video-container vertical-video">
             <video controls>
                 <source src="../uploads/National Day.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -101,13 +104,14 @@
                 <source src="../uploads/Mll.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="../uploads/cry.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </div>
-    <div class="video-container">
-        <video controls>
-            <source src="../uploads/cry.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-</div>
 
     <a href="../index.html" class="back-button">Back to Home</a>
 </body>
