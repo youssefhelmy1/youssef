@@ -4,23 +4,30 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 10px; /* Space between icons */
-    padding: 8px;
-    background: rgba(255, 255, 255, 0.7); /* Slightly transparent background */
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8); /* Darker transparent background */
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
 
 .social-links a {
     display: inline-block;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 .social-links img {
-    width: 24px; /* Smaller size */
-    height: 24px;
+    width: 32px; /* Larger size */
+    height: 32px;
+    border-radius: 50%;
+    background-color: white; /* White background for icons */
+    padding: 5px;
     transition: 0.3s;
 }
 
 .social-links img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    background-color: #ff5c5c; /* Change background color on hover */
 }
