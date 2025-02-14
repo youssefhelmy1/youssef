@@ -1,13 +1,17 @@
 <nav>
-	{% for link in site.data.navigation %}
-		{% if link.link == page.url %}
-			{% assign class = "active" %}
-		{% else %}
-			{% assign class = "" %}
-		{% endif %}
+    {% for link in site.data.navigation %}
+        {% if link.link == page.url %}
+            {% assign class = "active" %}
+        {% else %}
+            {% assign class = "" %}
+        {% endif %}
 
-		<a href="{{ link.link | relative_url }}" class="{{ class }}">
-			{{ link.name }}
-		</a>
-	{% endfor %}
+        <a href="{{ link.link | relative_url }}" class="{{ class }}">
+            {{ link.name }}
+        </a>
+    {% endfor %}
+	<a href="{{ site.baseurl }}/index.html" class="{% if page.url == '/index.html' %}active{% endif %}">Home</a>
+    <a href="{{ site.baseurl }}/about.html" class="{% if page.url == '/about.html' %}active{% endif %}">About</a>
+    <a href="{{ site.baseurl }}/performances.html" class="{% if page.url == '/performances.html' %}active{% endif %}">Performances</a>
+    <a href="{{ site.baseurl }}/contact.html" class="{% if page.url == '/contact.html' %}active{% endif %}">Contact</a>
 </nav>
